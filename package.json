@@ -1,0 +1,24 @@
+{
+  "name": "ssr-plugin",
+  "version": "1.0.0",
+  "description": "ssr-plugin support server side rendering react, vue",
+  "main": "dist/ssr-plugin.cjs.js",
+  "module": "dist/ssr-plugin.esm.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "rollup": "^0.60.0",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "mocha",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
